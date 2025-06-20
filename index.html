@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="Swiper/swiper-bundle.min.css">    
+<link rel="stylesheet" href="style/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/CRUD.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container2 top-nav">
+            <a href="#"><img class="logo" src="img/image.png" alt="logo" /></a>
+            <form action="/" class="search">  
+               <input oninput="searchData()" type="search" placeholder="Search for products" id="searchInput" />
+               <button type="submit">Search</button>
+           </form>
+
+           <div class="cart_header" onclick="openCart()">
+               <div class="icon_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="count_item">0</span>
+                
+               </div>
+               <div class="total_price">
+                   <p style="margin-bottom:0px;">My Cart</p>
+                   <p class="price_cart_head">$0</p>
+
+               </div>
+           </div>
+    
+        </div>
+
+        <nav>
+            <div class="links container2">
+                <ul>
+                    <li class="active2"><a>Home</a></li>
+                    <li><a href="#">All Proudct</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a>Login <i class="fas fa-sign-in-alt"></i> </a>
+                    <a href="#">signIn <i class="fas fa-user-plus"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>My Cart <span>(0Item In Cart)</span></h3>
+            <span onclick="closeCart()"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="items_in_cart">
+            <div class="item_cart">
+                <img src="~/Img/product/product-1.jpg" />
+                <div class="content">
+                    <div>
+                    <h4>Iphone 7plus</h4>
+                    <p class="price_cart">140$</p>
+                    </div>
+                    <div>
+                        <button class="delete" ><i class="fa-solid fa-trash"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">Proceed to Checked</a>
+                <button class="btn_cart trans_bg">Shop More</button>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="index">
+            <div class="slider">
+                <div class="container2 swap" >
+                    <div class="side_bar">
+                        <h2><i class="fa-solid fa-bars"></i> Shop By Department</h2>
+                        <a href="#">All Categories</a>
+                        <a href="#">Best Seller Products</a>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Offers</a>
+                        <a href="#">Phones</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Watches</a>
+                        <a href="#">Tv & Audio</a>
+                    </div>
+                    <div class="slide-swp mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" >
+                                <a href="#"><img src="img/3f6fbe83-2c09-4f22-98a0-0931cb9db95d.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Alternate Text" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="img/how-to-set-up-playstation-5.jpg" alt="Alternate Text" /></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="img/aeee023f-4243-4722-990d-756d17478216.__CR0,0,4042,2500_PT0_SX970_V1___.jpeg" alt="Alternate Text" /></a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            </div>
+            
+            <section class="features">
+                <div class="container2">
+                        <div class="feature_item">
+                            <img src="img/features1.png" alt="features1" />
+                            <div class="text">
+                                <h1>free Shipping</h1>
+                                <p>free Shipping on all order</p>
+                            </div>
+                        </div>
+                    <div class="feature_item">
+                        <img src="img/features2.png" alt="features2" />
+                        <div class="text">
+                            <h1>free Shipping</h1>
+                            <p>free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <div class="feature_item">
+                            <img src="img/features3.png" alt="features3" />
+                        <div class="text">
+                            <h1>free Shipping</h1>
+                            <p>free Shipping on all order</p>
+                        </div>
+                        </div>
+                    <div class="feature_item">
+                        <img src="img/features4.png" alt="features4" />
+                        <div class="text">
+                            <h1>free Shipping</h1>
+                            <p>free Shipping on all order</p>
+                        </div>
+                    </div>
+            
+                    <div class="feature_item">
+                        <img src="img/features5.png" alt="features5" />
+                        <div class="text">
+                            <h1>free Shipping</h1>
+                            <p>free Shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <section class="banner">
+                <div class="container2">
+                    <div class="banner_img">
+                        <div class="glass_hover"></div>
+                        <a href="#"><img src="img/banner/banner-1.jpg" alt="" /></a>
+                    </div>
+                    <div class="banner_img">
+                        <div class="glass_hover"></div>
+                        <a href="#"><img src="img/banner/banner-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="banner_img">
+                        <div class="glass_hover"></div>
+                        <a href="#"><img src="img/banner/banner-6.jpg" alt="" /></a>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="slide slide_sale">
+                <div class="container2">
+                    <div class="top_slide d-flex justify-content-between">
+                        <h2>On Sale <span>Products</span></h2>
+                        <input type="button" value="Add-Item" class="btn btn-success" id="AddItemBTN">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row gap-4" id="itemscontaner">
+                            <div class="products col-md-6 ">
+                                <div class="product_card ">
+                                    <div class="icons">
+                                        <span><i class="fa-solid fa-pen-to-square"></i></span>
+                                        <span><i class="fa-solid fa-heart"></i></span>
+                                        <span><i class="fa-solid fa-trash" id="delete"></i></span>
+                                    </div>
+                                    <div class="img_product">
+                                        <img src="img/product/product-1.jpg" alt="product-1" />
+                                        <img class="img_hover" src="img/product/product1.jpg" alt="Alternate Text" />
+                    
+                                    </div>
+                                    <h3 class="name_product"><a href="">Iphone 7</a></h3>
+                    
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                    
+                                    <div class="price">
+                                        <p><span>450$</span></p>
+                                        <span class="old_price">550$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                       
+                        
+                    </div>
+                
+            </section>
+
+            <div class="lightbox d-flex justify-content-center align-items-center d-none">
+                <div class="box">
+                    <div>
+                        <label for="name">Name Producate</label>
+                        <input type="text" name="Name"  class="form-control " id="name">
+                        <span class="bg-danger form-control text-light d-none "id="spanName">need 3 chars</span>
+                    </div>
+                    <div>
+                        <label for="salary">salary</label>
+                        <input type="text" name="salary" class="form-control" id="salary">
+                        <span class="bg-danger form-control text-light d-none " id="spansalary">ُEnter Number Please</span>
+                    </div>
+                    <div>
+                        <label for="discount">Salary After discount</label>
+                        <input type="text" name="discount" class="form-control" id="discount">
+                        <span class="bg-danger form-control text-light d-none  "id="spandiscount">ُEnter Number Please</span>
+                    </div>
+                    <div>
+                        <label for="image">image</label>
+                        <input type="file" name="image" class="form-control" id="image">
+                    </div>
+                
+                    <input type="button" value="Add Item" class="btn btn-success mybtn myAddbtn ">
+                    <input type="button" value="Update Item" class="btn btn-warning myUpdatebtn mybtn d-none">
+                    <i class="fa-regular fa-circle-xmark close" id="close"></i>
+                </div>
+                   </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        
+    </footer>
+    <script src="Script/swiper.js">
+    </script>
+
+    <script src="Swiper/swiper-bundle.min.js"></script>    
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/script.js"></script>
+   
+</body>
+</html>
